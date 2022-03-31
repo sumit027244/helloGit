@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        /* universal selector same as body */
+        /**{
+            color: forestgreen;
+        }*/
+
+        /* class selector */
+        .textcolor{
+            color: green;
+        }
+        .largetext{
+            font-size: 45px;
+        }
+        .textcolor.largetext{
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            background-color: aquamarine;
+        }
+        .liger{
+            color: violet;
+            background-color: blue;
+        }
+
+        /*  */
+        h1{
+            background-color: skyblue;
+        }
+
+        /* Id selector */
+        #unique{
+            background-color: blueviolet;
+        }
+
+        /* Grouping selector */
+        h4,a,h3{
+            color: pink;
+        }
+
+        /* descendent selector */
+        div p span{
+            color: mediumpurple;
+            font-size: 55px;
+        }
+        
+        /* childern selector */
+        div>p>span{
+            color: firebrick;
+            background-color: lightblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <table border="8">
+        <tr>
+            <th colspan="2">Animals</th>
+        </tr>
+        <tr>
+            <td colspan="2">Hippopotamus</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Horse</td>
+            <td>Mare</td>
+        </tr>
+        <tr>
+            <td>Stallion</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Chicken</td>
+            <td>Hen</td>
+        </tr>
+        <tr>
+            <td>Rooster</td>
+        </tr>
+        <tr>
+            <td colspan="2">Crocodile</td>
+        </tr>
+    </table>
+    <h1>Class Selectors</h1>
+    <p class="textcolor largetext">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem minima ex dolor cum tenetur laboriosam distinctio soluta nulla repellendus adipisci ducimus ullam dolores aut, mollitia libero quaerat eius veritatis suscipit.
+    </p>
+    <p class="largetext">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a ea expedita fugiat unde veniam, maxime reiciendis veritatis tempora ratione dolorum nostrum odit eos itaque. At reprehenderit nesciunt eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iusto expedita sequi illum magni maxime. Molestias vel, facilis nisi accusantium repellat repellendus iste architecto laborum ipsum velit id nobis ipsam!
+    </p>
+    <p class="textcolor">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque fugit veniam reiciendis aliquam ipsam explicabo tempore ut doloremque, nulla beatae eum voluptas dicta ea quibusdam libero tempora tenetur consectetur.
+        <span class="liger">dorem is good</span> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis sequi, blanditiis reprehenderit odit quas aut tempore possimus sapiente commodi ut laborum quisquam vitae consectetur alias nostrum veniam tempora, hic cupiditate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dignissimos repellendus dolorem modi rerum numquam accusamus quasi a qui, harum inventore sunt illum voluptatum tenetur sapiente, expedita ex aut. Perferendis.
+    </p>
+
+    <h1>ID Selectors</h1>
+    <p class="textcolor largetext" id="unique">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem minima ex dolor cum tenetur laboriosam distinctio soluta nulla repellendus adipisci ducimus ullam dolores aut, mollitia libero quaerat eius veritatis suscipit.
+    </p>
+    <p class="largetext">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a ea expedita fugiat unde veniam, maxime reiciendis veritatis tempora ratione dolorum nostrum odit eos itaque. At reprehenderit nesciunt eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae iusto expedita sequi illum magni maxime. Molestias vel, facilis nisi accusantium repellat repellendus iste architecto laborum ipsum velit id nobis ipsam!
+    </p>
+    <p class="textcolor">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam atque fugit veniam reiciendis aliquam ipsam explicabo tempore ut doloremque, nulla beatae eum voluptas dicta ea quibusdam libero tempora tenetur consectetur.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis sequi, blanditiis reprehenderit odit quas aut tempore possimus sapiente commodi ut laborum quisquam vitae consectetur alias nostrum veniam tempora, hic cupiditate.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dignissimos repellendus dolorem modi rerum numquam accusamus quasi a qui, harum inventore sunt illum voluptatum tenetur sapiente, expedita ex aut. Perferendis.
+    </p>
+
+    <h4>Grouping selector</h4>
+
+    <a href="https://nados.io" target="_blank"> Nadoos </a>
+
+    <h3>i an h3</h3>
+
+    <div>
+        <p>
+            <span>I am child</span>
+        </p>
+    </div>
+
+    <div>
+        <span>
+            <p>
+                <span>I am a decendent</span>
+            </p>
+        </span>
+    </div>
+</body>
+</html>
